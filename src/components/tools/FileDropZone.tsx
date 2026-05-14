@@ -13,7 +13,7 @@ interface FileDropZoneProps {
 export default function FileDropZone({
   onFile,
   accept = ".json,.txt",
-  label = "拖放文件到此处，或点击选择",
+  label = "Drop a file here, or click to select",
 }: FileDropZoneProps) {
   const [dragging, setDragging] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);

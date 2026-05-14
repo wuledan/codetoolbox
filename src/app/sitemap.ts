@@ -8,20 +8,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of routing.locales) {
     const prefix = locale === "en" ? "" : `/${locale}`;
     entries.push({
-      url: `https://codetoolbox.dev${prefix}`,
+      url: `https://code-toolbox-two.vercel.app${prefix}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1.0,
     });
     entries.push({
-      url: `https://codetoolbox.dev${prefix}/tools`,
+      url: `https://code-toolbox-two.vercel.app${prefix}/tools`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
     });
     for (const tool of tools) {
       entries.push({
-        url: `https://codetoolbox.dev${prefix}${tool.path}`,
+        url: `https://code-toolbox-two.vercel.app${prefix}${tool.path}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.8,

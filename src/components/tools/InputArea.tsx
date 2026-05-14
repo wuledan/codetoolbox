@@ -13,7 +13,7 @@ interface InputAreaProps {
 export default function InputArea({
   value,
   onChange,
-  placeholder = "在此粘贴你的数据...",
+  placeholder = "Paste your data here...",
   minHeight = "200px",
   className,
   error,

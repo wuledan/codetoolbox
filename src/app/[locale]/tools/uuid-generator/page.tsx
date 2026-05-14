@@ -6,14 +6,9 @@ import ToolLayout from "@/components/tools/ToolLayout";
 import { Button } from "@/components/ui/button";
 import { Copy, RefreshCw } from "lucide-react";
 import { useCopyToClipboard } from "@/hooks/useCopyToClipboard";
+import { v1, v4, v7 } from "uuid";
 
-function generateV4(): string {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (c) => {
-    const r = (Math.random() * 16) | 0;
-    return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
-  });
-}
-const generators: Record<string, () => string> = { v4: generateV4 };
+const generators: Record<string, () => string> = { v1, v4, v7 };
 
 export default function UuidGeneratorPage() {
   const t = useTranslations("uuidGenerator");
@@ -28,7 +23,7 @@ export default function UuidGeneratorPage() {
         <div>
           <label className="mb-1 block text-xs text-muted-foreground">{t("version")}</label>
           <div className="flex gap-2">
-            {["v4"].map((v) => (
+            {["v1", "v4", "v7"].map((v) => (
               <Button key={v} variant={version === v ? "default" : "outline"} size="sm" onClick={() => setVersion(v)}>{v.toUpperCase()}</Button>
             ))}
           </div>
@@ -39,7 +34,7 @@ export default function UuidGeneratorPage() {
         </div>
       </div>
       <div className="flex gap-2">
-        <Button onClick={() => { const gen = generators[version] || generateV4; setUuids(Array.from({ length: count }, gen)); }}>
+        <Button onClick={() => { const gen = generators[version] || v4; setUuids(Array.from({ length: count }, gen)); }}>
           <RefreshCw className="h-4 w-4 mr-1" /> {t("generate")}
         </Button>
         {uuids.length > 0 && (

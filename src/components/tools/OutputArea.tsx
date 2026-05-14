@@ -14,16 +14,26 @@ interface OutputAreaProps {
   language?: string;
   status?: string | null;
   statusType?: "success" | "error" | "info";
+  clearLabel?: string;
+  downloadLabel?: string;
+  copyLabel?: string;
+  copiedLabel?: string;
+  emptyLabel?: string;
 }
 
 export default function OutputArea({
   value,
   onClear,
   className,
-  label = "输出",
+  label = "Output",
   language,
   status,
   statusType,
+  clearLabel = "Clear",
+  downloadLabel = "Download",
+  copyLabel = "Copy",
+  copiedLabel = "Copied",
+  emptyLabel = "Waiting for input...",
 }: OutputAreaProps) {
   const { copied, copy } = useCopyToClipboard();
 
@@ -49,21 +59,21 @@ export default function OutputArea({
           {onClear && (
             <Button variant="ghost" size="sm" onClick={onClear}>
               <Trash2 className="h-3 w-3 mr-1" />
-              清空
+              {clearLabel}
             </Button>
           )}
           <Button variant="ghost" size="sm" onClick={handleDownload}>
             <Download className="h-3 w-3 mr-1" />
-            下载
+            {downloadLabel}
           </Button>
           <Button variant="ghost" size="sm" onClick={handleCopy}>
             <Copy className="h-3 w-3 mr-1" />
-            {copied ? "已复制" : "复制"}
+            {copied ? copiedLabel : copyLabel}
           </Button>
         </div>
       </div>
       <pre className="w-full overflow-auto rounded-lg border border-border bg-secondary p-4 font-mono text-sm leading-relaxed">
-        <code>{value || "等待输入..."}</code>
+        <code>{value || emptyLabel}</code>
       </pre>
       {status && (
         <p
