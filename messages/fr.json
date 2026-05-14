@@ -1,0 +1,246 @@
+{
+  "common": {
+    "siteName": "CodeToolbox",
+    "siteTitle": "Boîte à Outils de Code",
+    "tagline": "Chaque développeur en a besoin",
+    "subtitle": "Dans le navigateur · Privé · Instantané",
+    "searchPlaceholder": "Search tools...",
+    "allTools": "Todas las herramientas",
+    "viewAll": "View All {count} Tools →",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "blog": "Blog",
+    "latestBlog": "Latest: 10 Online Tools Every Developer Needs →",
+    "themeToggle": "Toggle theme",
+    "noData": "Waiting for input..."
+  },
+  "categories": {
+    "format": "Formatting",
+    "encode": "Encoding",
+    "test": "Testing",
+    "generate": "Generators",
+    "convert": "Converters",
+    "transform": "Transformers"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "Formateaeur JSON",
+      "description": "Formatea, valida y embellece datos JSON"
+    },
+    "code-formatter": {
+      "name": "Formateaeur de Código",
+      "description": "Beautify JS/TS/CSS/HTML/JSON with one click"
+    },
+    "sql-formatter": {
+      "name": "SQL Formatter",
+      "description": "Format SQL with support for 15 database dialects"
+    },
+    "base64-encode": {
+      "name": "Codificar/Decodificar Base64",
+      "description": "Encode text and images to/from Base64"
+    },
+    "url-encode": {
+      "name": "Codificar/Decodificar URL",
+      "description": "URL encoding and decoding with Component mode"
+    },
+    "html-escape": {
+      "name": "Escapar HTML",
+      "description": "Escape and unescape HTML special characters"
+    },
+    "jwt-decoder": {
+      "name": "Decodificaeur JWT",
+      "description": "Decode JWT tokens and inspect Header & Payload"
+    },
+    "regex-tester": {
+      "name": "Probaeur de Regex",
+      "description": "Test regular expressions with live matching and highlighting"
+    },
+    "diff-checker": {
+      "name": "Comparaeur de Texto",
+      "description": "Compare two texts with side-by-side and inline modes"
+    },
+    "markdown-preview": {
+      "name": "Vista Previa Markdown",
+      "description": "Real-time Markdown rendering with GFM support"
+    },
+    "uuid-generator": {
+      "name": "Generaeur UUID",
+      "description": "Generate UUIDs in versions v1/v4/v7 with batch support"
+    },
+    "timestamp": {
+      "name": "Convertir Timestamp",
+      "description": "Convert Unix timestamps to/from dates in multiple formats"
+    },
+    "yaml-json": {
+      "name": "YAML ↔ JSON",
+      "description": "Convert between YAML and JSON formats"
+    },
+    "json-csv": {
+      "name": "JSON ↔ CSV",
+      "description": "Convert between JSON arrays and CSV tables"
+    },
+    "color-converter": {
+      "name": "Convertir Color",
+      "description": "Convert between Hex, RGB, and HSL color formats"
+    }
+  },
+  "toolPage": {
+    "breadcrumb": "Inicio",
+    "relatedTools": "Herramientas relacionadas",
+    "copy": "Copier",
+    "copied": "Copié",
+    "clear": "Effacer",
+    "download": "Télécharger",
+    "output": "Salida",
+    "input": "Entrada",
+    "preview": "Aperçu",
+    "edit": "Éditer"
+  },
+  "jsonFormatter": {
+    "title": "JSON Formatter & Validator",
+    "description": "Format, validate, and beautify JSON data with configurable indentation and key sorting.",
+    "indent": "Indent",
+    "sortKeys": "Sort keys",
+    "format": "▶ Formatear",
+    "minify": "Minify",
+    "valid": "JSON válido",
+    "invalid": "Invalid JSON format",
+    "placeholder": "Paste your JSON data here...",
+    "dropFile": "Drop a JSON file here, or click to select",
+    "spaces": "spaces"
+  },
+  "base64": {
+    "title": "Base64 Encode / Decode",
+    "description": "Encode and decode text and images to/from Base64. All processing happens in your browser.",
+    "textToBase64": "Text → Base64",
+    "base64ToText": "Base64 → Text",
+    "imageToBase64": "Image → Base64",
+    "convert": "▶ Convertir",
+    "placeholder": "Enter text to encode...",
+    "placeholderDecode": "Enter Base64 string...",
+    "clickToSelect": "Click to select an image",
+    "error": "Processing failed"
+  },
+  "urlEncode": {
+    "title": "URL Encode / Decode",
+    "description": "Encode and decode URLs with Component mode and full URL mode support.",
+    "encode": "URL Encode",
+    "decode": "URL Decode",
+    "componentMode": "Component mode (encode special chars)",
+    "convert": "▶ Convertir",
+    "placeholderEncode": "https://example.com?name=Hello World",
+    "placeholderDecode": "https%3A%2F%2Fexample.com"
+  },
+  "jwtDecoder": {
+    "title": "JWT Decoder",
+    "description": "Decode JSON Web Tokens (JWT) and inspect Header, Payload, and Signature. Note: This tool does not verify signatures.",
+    "decode": "▶ Decodificar",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "placeholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "invalidToken": "Invalid JWT token: expected 3 parts (header.payload.signature)"
+  },
+  "regexTester": {
+    "title": "Regex Tester",
+    "description": "Test regular expressions in real-time with match highlighting and group display.",
+    "pattern": "Pattern",
+    "flags": "Flags",
+    "testText": "Test text",
+    "matches": "{count} match(es)",
+    "result": "Results",
+    "placeholder": "\\d+"
+  },
+  "codeFormatter": {
+    "title": "Code Formatter",
+    "description": "Format JavaScript, TypeScript, CSS, HTML, and JSON code using Prettier engine.",
+    "language": "Language",
+    "format": "▶ Formatear",
+    "placeholder": "Paste your code here..."
+  },
+  "uuidGenerator": {
+    "title": "UUID Generator",
+    "description": "Generate UUIDs in versions v1/v4/v7 with batch support and one-click copy.",
+    "version": "Version",
+    "count": "Count",
+    "generate": "Generar",
+    "copyAll": "Copy All",
+    "copied": "Copied"
+  },
+  "timestamp": {
+    "title": "Timestamp Converter",
+    "description": "Convert between Unix timestamps and dates. Supports seconds, milliseconds, and ISO 8601 formats.",
+    "supported": "Supports: Unix seconds (e.g. 1719360000), Unix milliseconds (e.g. 1719360000000), ISO 8601 (e.g. 2024-06-26T00:00:00Z)",
+    "detected": "Detected format",
+    "iso8601": "ISO 8601",
+    "utc": "UTC String",
+    "local": "Local Time",
+    "unixSeconds": "Unix Seconds",
+    "unixMs": "Unix Milliseconds",
+    "ymd": "Date (YMD)",
+    "unrecognized": "Unrecognized timestamp format",
+    "placeholder": "1719360000"
+  },
+  "colorConverter": {
+    "title": "Color Converter",
+    "description": "Convert between Hex, RGB, and HSL color formats with alpha channel support.",
+    "placeholder": "#ff6600 or rgb(255, 102, 0) or hsl(24, 100%, 50%)",
+    "unrecognized": "Unrecognized color format"
+  },
+  "htmlEscape": {
+    "title": "HTML Escape / Unescape",
+    "description": "Escape and unescape HTML special characters (&lt; &gt; &amp; &quot; &#39;).",
+    "escape": "Escape",
+    "unescape": "Unescape",
+    "convert": "▶ Convertir",
+    "placeholderEscape": "<script>alert(\"XSS\")</script>",
+    "placeholderUnescape": "&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;"
+  },
+  "sqlFormatter": {
+    "title": "SQL Formatter",
+    "description": "Format SQL statements with support for 15 database dialects.",
+    "dialect": "Dialect",
+    "indent": "Indent",
+    "format": "▶ Formatear",
+    "placeholder": "SELECT * FROM users WHERE id = 1"
+  },
+  "markdownPreview": {
+    "title": "Markdown Preview",
+    "description": "Real-time Markdown rendering with support for headings, bold, code blocks, lists, and more.",
+    "edit": "Edit",
+    "preview": "Preview"
+  },
+  "diffChecker": {
+    "title": "Text Diff Checker",
+    "description": "Compare two texts and highlight differences with side-by-side and inline modes.",
+    "original": "Original",
+    "modified": "Modified",
+    "sideBySide": "Side by Side",
+    "inline": "Inline",
+    "clear": "Clear",
+    "diffCount": "{lines} lines, {changes} differences"
+  },
+  "yamlJson": {
+    "title": "YAML ↔ JSON Converter",
+    "description": "Quickly convert between YAML and JSON formats.",
+    "yamlToJson": "YAML → JSON",
+    "jsonToYaml": "JSON → YAML",
+    "swap": "Swap",
+    "convert": "▶ Convertir",
+    "placeholderYaml": "name: Alice\nage: 30\nroles:\n  - admin",
+    "placeholderJson": "{\"name\": \"Alice\", \"age\": 30}"
+  },
+  "jsonCsv": {
+    "title": "JSON ↔ CSV Converter",
+    "description": "Quickly convert between JSON arrays and CSV tables.",
+    "jsonToCsv": "JSON → CSV",
+    "csvToJson": "CSV → JSON",
+    "delimiter": "Delimiter",
+    "comma": "Comma (,)",
+    "semicolon": "Semicolon (;)",
+    "tab": "Tab",
+    "convert": "▶ Convertir",
+    "placeholderJson": "[{\"name\": \"Alice\", \"age\": 30}, {\"name\": \"Bob\", \"age\": 25}]",
+    "placeholderCsv": "name,age\nAlice,30\nBob,25"
+  }
+}

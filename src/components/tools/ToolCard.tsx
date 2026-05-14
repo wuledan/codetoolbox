@@ -1,11 +1,13 @@
-import Link from "next/link";
+"use client";
+
+import { Link } from "@/i18n/navigation";
 import type { ToolInfo } from "@/lib/registry";
 
 export default function ToolCard({ tool }: { tool: ToolInfo }) {
   const Icon = tool.icon;
   return (
     <Link
-      href={tool.path}
+      href={tool.path as any}
       className="group flex items-start gap-4 rounded-lg border border-border bg-card p-4 transition-all hover:border-blue-500/50 hover:shadow-md hover:shadow-blue-500/5"
     >
       <div className="mt-1 rounded-md bg-blue-500/10 p-2 text-blue-500 transition-colors group-hover:bg-blue-500/20">

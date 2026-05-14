@@ -1,0 +1,124 @@
+{
+  "common": {
+    "siteName": "CodeToolbox",
+    "siteTitle": "在线代码工具箱",
+    "tagline": "每个开发者都需要",
+    "subtitle": "纯浏览器端运行 · 保护隐私 · 即开即用",
+    "searchPlaceholder": "搜索工具...",
+    "allTools": "全部工具",
+    "viewAll": "查看全部 {count} 个工具 →",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "blog": "最新文章",
+    "latestBlog": "前端开发者必备的 10 个在线工具 →",
+    "themeToggle": "切换主题",
+    "noData": "等待输入..."
+  },
+  "categories": {
+    "format": "格式化",
+    "encode": "编解码",
+    "test": "测试",
+    "generate": "生成",
+    "convert": "转换",
+    "transform": "转换"
+  },
+  "tools": {
+    "json-formatter": { "name": "JSON 格式化器", "description": "格式化、美化、校验 JSON 数据" },
+    "code-formatter": { "name": "代码格式化", "description": "一键美化 JS/TS/CSS/HTML/JSON 代码" },
+    "sql-formatter": { "name": "SQL 格式化", "description": "格式化 SQL，支持 15 种数据库方言" },
+    "base64-encode": { "name": "Base64 编解码", "description": "文本和图片的 Base64 编码与解码" },
+    "url-encode": { "name": "URL 编解码", "description": "URL 编码与解码，支持 Component 模式" },
+    "html-escape": { "name": "HTML 转义", "description": "HTML 特殊字符转义与反转义" },
+    "jwt-decoder": { "name": "JWT 解码器", "description": "解析 JWT Token，查看 Header 和 Payload" },
+    "regex-tester": { "name": "正则测试器", "description": "实时正则表达式匹配测试" },
+    "diff-checker": { "name": "文本差异对比", "description": "比较两段文本差异，支持并排和行内模式" },
+    "markdown-preview": { "name": "Markdown 预览", "description": "实时 Markdown 渲染预览" },
+    "uuid-generator": { "name": "UUID 生成器", "description": "生成 UUID v1/v4/v7，支持批量" },
+    "timestamp": { "name": "时间戳转换", "description": "Unix 时间戳与日期互转" },
+    "yaml-json": { "name": "YAML ↔ JSON", "description": "YAML 与 JSON 格式互转" },
+    "json-csv": { "name": "JSON ↔ CSV", "description": "JSON 数组与 CSV 表格互转" },
+    "color-converter": { "name": "颜色转换", "description": "Hex / RGB / HSL 颜色格式互转" }
+  },
+  "toolPage": {
+    "breadcrumb": "首页", "relatedTools": "相关工具",
+    "copy": "复制", "copied": "已复制", "clear": "清空", "download": "下载",
+    "output": "输出", "input": "输入", "preview": "预览", "edit": "编辑"
+  },
+  "jsonFormatter": {
+    "title": "JSON 格式化器 & 校验器", "description": "格式化、美化、校验 JSON 数据，支持缩进配置和键排序。",
+    "indent": "缩进", "sortKeys": "排序键", "format": "▶ 格式化", "minify": "压缩",
+    "valid": "JSON 有效", "invalid": "JSON 格式无效", "placeholder": "在这里粘贴你的 JSON 数据...",
+    "dropFile": "拖放 JSON 文件到此处，或点击选择", "spaces": "空格"
+  },
+  "base64": {
+    "title": "Base64 编解码器", "description": "文本和图片的 Base64 编解码，所有处理在浏览器端完成。",
+    "textToBase64": "文本 → Base64", "base64ToText": "Base64 → 文本", "imageToBase64": "图片 → Base64",
+    "convert": "▶ 转换", "placeholder": "输入要编码的文本...", "placeholderDecode": "输入 Base64 字符串...",
+    "clickToSelect": "点击选择图片", "error": "处理失败"
+  },
+  "urlEncode": {
+    "title": "URL 编解码器", "description": "URL 编解码，支持 Component 模式和完整 URL 模式。",
+    "encode": "URL 编码", "decode": "URL 解码", "componentMode": "Component 模式（编码特殊字符）",
+    "convert": "▶ 转换", "placeholderEncode": "https://example.com?name=Hello World", "placeholderDecode": "https%3A%2F%2Fexample.com"
+  },
+  "jwtDecoder": {
+    "title": "JWT 解码器", "description": "解析 JWT Token，查看 Header、Payload 和 Signature。注意：本工具不验证签名。",
+    "decode": "▶ 解码", "header": "Header", "payload": "Payload", "signature": "Signature",
+    "placeholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "invalidToken": "无效的 JWT Token：需要三部分（header.payload.signature）"
+  },
+  "regexTester": {
+    "title": "正则测试器", "description": "实时测试正则表达式，支持语法高亮和匹配展示。",
+    "pattern": "正则", "flags": "标志", "testText": "测试文本", "matches": "匹配 {count} 处", "result": "结果", "placeholder": "\\d+"
+  },
+  "codeFormatter": {
+    "title": "代码格式化", "description": "格式化 JavaScript、TypeScript、CSS、HTML、JSON 代码。",
+    "language": "语言", "format": "▶ 格式化", "placeholder": "粘贴你的代码..."
+  },
+  "uuidGenerator": {
+    "title": "UUID 生成器", "description": "生成 UUID v1/v4/v7，支持批量生成和一键复制。",
+    "version": "版本", "count": "数量", "generate": "生成", "copyAll": "复制全部", "copied": "已复制"
+  },
+  "timestamp": {
+    "title": "时间戳转换", "description": "Unix 时间戳与日期互转，支持秒级、毫秒级和 ISO 8601 格式。",
+    "supported": "支持：Unix 秒级 (如 1719360000)、毫秒级 (如 1719360000000)、ISO 8601 (如 2024-06-26T00:00:00Z)",
+    "detected": "检测格式", "iso8601": "ISO 8601", "utc": "UTC 字符串", "local": "本地时间",
+    "unixSeconds": "Unix 秒级", "unixMs": "Unix 毫秒级", "ymd": "年月日",
+    "unrecognized": "无法识别的时间格式", "placeholder": "1719360000"
+  },
+  "colorConverter": {
+    "title": "颜色转换", "description": "Hex、RGB、HSL 颜色格式互转。",
+    "placeholder": "#ff6600 或 rgb(255, 102, 0) 或 hsl(24, 100%, 50%)",
+    "unrecognized": "无法识别的颜色格式"
+  },
+  "htmlEscape": {
+    "title": "HTML 转义 / 反转义", "description": "转义 HTML 特殊字符（&lt; &gt; &amp; &quot; &#39;）或还原。",
+    "escape": "转义", "unescape": "反转义", "convert": "▶ 转换",
+    "placeholderEscape": "<script>alert(\"XSS\")</script>",
+    "placeholderUnescape": "&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;"
+  },
+  "sqlFormatter": {
+    "title": "SQL 格式化", "description": "格式化 SQL 语句，支持多种数据库方言。",
+    "dialect": "方言", "indent": "缩进", "format": "▶ 格式化", "placeholder": "SELECT * FROM users WHERE id = 1"
+  },
+  "markdownPreview": {
+    "title": "Markdown 预览", "description": "实时 Markdown 渲染预览。",
+    "edit": "编辑", "preview": "预览"
+  },
+  "diffChecker": {
+    "title": "文本差异对比", "description": "比较两段文本的差异，支持并排和行内模式。",
+    "original": "原始文本", "modified": "新文本", "sideBySide": "并排模式", "inline": "行内模式",
+    "clear": "清空", "diffCount": "{lines} 行，{changes} 处差异"
+  },
+  "yamlJson": {
+    "title": "YAML ↔ JSON 互转", "description": "YAML 与 JSON 格式互转。",
+    "yamlToJson": "YAML → JSON", "jsonToYaml": "JSON → YAML", "swap": "互换方向",
+    "convert": "▶ 转换", "placeholderYaml": "name: Alice\nage: 30", "placeholderJson": "{\"name\": \"Alice\"}"
+  },
+  "jsonCsv": {
+    "title": "JSON ↔ CSV 互转", "description": "JSON 数组与 CSV 表格互转。",
+    "jsonToCsv": "JSON → CSV", "csvToJson": "CSV → JSON",
+    "delimiter": "分隔符", "comma": "逗号 (,)", "semicolon": "分号 (;)", "tab": "Tab",
+    "convert": "▶ 转换", "placeholderJson": "[{\"name\": \"Alice\", \"age\": 30}]", "placeholderCsv": "name,age\nAlice,30"
+  }
+}

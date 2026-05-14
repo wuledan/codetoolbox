@@ -1,0 +1,246 @@
+{
+  "common": {
+    "siteName": "CodeToolbox",
+    "siteTitle": "オンラインコードツールボックス",
+    "tagline": "すべての開発者に必要な",
+    "subtitle": "ブラウザで実行 · プライベート · 即時",
+    "searchPlaceholder": "Search tools...",
+    "allTools": "すべてのツール",
+    "viewAll": "View All {count} Tools →",
+    "privacy": "プライバシー",
+    "terms": "利用規約",
+    "blog": "ブログ",
+    "latestBlog": "開発者必携のオンラインツール10選 →",
+    "themeToggle": "Toggle theme",
+    "noData": "Waiting for input..."
+  },
+  "categories": {
+    "format": "フォーマット",
+    "encode": "エンコード",
+    "test": "テスト",
+    "generate": "生成",
+    "convert": "変換",
+    "transform": "Transformers"
+  },
+  "tools": {
+    "json-formatter": {
+      "name": "JSONフォーマッター",
+      "description": "JSONデータのフォーマット・検証・美化"
+    },
+    "code-formatter": {
+      "name": "コードフォーマッター",
+      "description": "JS/TS/CSS/HTML/JSONをワンクリックで美化"
+    },
+    "sql-formatter": {
+      "name": "SQLフォーマッター",
+      "description": "15のデータベース方言をサポート"
+    },
+    "base64-encode": {
+      "name": "Base64エンコード/デコード",
+      "description": "テキストと画像のBase64変換"
+    },
+    "url-encode": {
+      "name": "URLエンコード/デコード",
+      "description": "URL encoding and decoding with Component mode"
+    },
+    "html-escape": {
+      "name": "HTMLエスケープ",
+      "description": "Escape and unescape HTML special characters"
+    },
+    "jwt-decoder": {
+      "name": "JWTデコーダー",
+      "description": "Decode JWT tokens and inspect Header & Payload"
+    },
+    "regex-tester": {
+      "name": "正規表現テスター",
+      "description": "Test regular expressions with live matching and highlighting"
+    },
+    "diff-checker": {
+      "name": "テキスト差分比較",
+      "description": "Compare two texts with side-by-side and inline modes"
+    },
+    "markdown-preview": {
+      "name": "Markdownプレビュー",
+      "description": "Real-time Markdown rendering with GFM support"
+    },
+    "uuid-generator": {
+      "name": "UUID生成器",
+      "description": "Generate UUIDs in versions v1/v4/v7 with batch support"
+    },
+    "timestamp": {
+      "name": "タイムスタンプ変換",
+      "description": "Convert Unix timestamps to/from dates in multiple formats"
+    },
+    "yaml-json": {
+      "name": "YAML ↔ JSON",
+      "description": "Convert between YAML and JSON formats"
+    },
+    "json-csv": {
+      "name": "JSON ↔ CSV",
+      "description": "Convert between JSON arrays and CSV tables"
+    },
+    "color-converter": {
+      "name": "カラー変換",
+      "description": "Convert between Hex, RGB, and HSL color formats"
+    }
+  },
+  "toolPage": {
+    "breadcrumb": "ホーム",
+    "relatedTools": "関連ツール",
+    "copy": "コピー",
+    "copied": "コピー済み",
+    "clear": "クリア",
+    "download": "ダウンロード",
+    "output": "出力",
+    "input": "入力",
+    "preview": "プレビュー",
+    "edit": "編集"
+  },
+  "jsonFormatter": {
+    "title": "JSONフォーマッター & バリデーター",
+    "description": "Format, validate, and beautify JSON data with configurable indentation and key sorting.",
+    "indent": "インデント",
+    "sortKeys": "キーを並び替え",
+    "format": "▶ フォーマット",
+    "minify": "圧縮",
+    "valid": "有効なJSON",
+    "invalid": "Invalid JSON format",
+    "placeholder": "Paste your JSON data here...",
+    "dropFile": "Drop a JSON file here, or click to select",
+    "spaces": "スペース"
+  },
+  "base64": {
+    "title": "Base64 エンコード/デコード",
+    "description": "Encode and decode text and images to/from Base64. All processing happens in your browser.",
+    "textToBase64": "テキスト → Base64",
+    "base64ToText": "Base64 → テキスト",
+    "imageToBase64": "画像 → Base64",
+    "convert": "▶ 変換",
+    "placeholder": "Enter text to encode...",
+    "placeholderDecode": "Enter Base64 string...",
+    "clickToSelect": "クリックして画像を選択",
+    "error": "処理に失敗しました"
+  },
+  "urlEncode": {
+    "title": "URL エンコード/デコード",
+    "description": "Encode and decode URLs with Component mode and full URL mode support.",
+    "encode": "URLエンコード",
+    "decode": "URLデコード",
+    "componentMode": "Component mode (encode special chars)",
+    "convert": "▶ 変換",
+    "placeholderEncode": "https://example.com?name=Hello World",
+    "placeholderDecode": "https%3A%2F%2Fexample.com"
+  },
+  "jwtDecoder": {
+    "title": "JWT デコーダー",
+    "description": "Decode JSON Web Tokens (JWT) and inspect Header, Payload, and Signature. Note: This tool does not verify signatures.",
+    "decode": "▶ デコード",
+    "header": "Header",
+    "payload": "Payload",
+    "signature": "Signature",
+    "placeholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+    "invalidToken": "Invalid JWT token: expected 3 parts (header.payload.signature)"
+  },
+  "regexTester": {
+    "title": "正規表現テスター",
+    "description": "Test regular expressions in real-time with match highlighting and group display.",
+    "pattern": "パターン",
+    "flags": "フラグ",
+    "testText": "テストテキスト",
+    "matches": "{count} match(es)",
+    "result": "結果",
+    "placeholder": "\\d+"
+  },
+  "codeFormatter": {
+    "title": "コードフォーマッター",
+    "description": "Format JavaScript, TypeScript, CSS, HTML, and JSON code using Prettier engine.",
+    "language": "言語",
+    "format": "▶ フォーマット",
+    "placeholder": "Paste your code here..."
+  },
+  "uuidGenerator": {
+    "title": "UUID 生成器",
+    "description": "Generate UUIDs in versions v1/v4/v7 with batch support and one-click copy.",
+    "version": "バージョン",
+    "count": "件数",
+    "generate": "生成",
+    "copyAll": "すべてコピー",
+    "copied": "コピー済み"
+  },
+  "timestamp": {
+    "title": "タイムスタンプ変換",
+    "description": "Convert between Unix timestamps and dates. Supports seconds, milliseconds, and ISO 8601 formats.",
+    "supported": "Supports: Unix seconds (e.g. 1719360000), Unix milliseconds (e.g. 1719360000000), ISO 8601 (e.g. 2024-06-26T00:00:00Z)",
+    "detected": "Detected format",
+    "iso8601": "ISO 8601",
+    "utc": "UTC文字列",
+    "local": "ローカル時間",
+    "unixSeconds": "Unix秒",
+    "unixMs": "Unixミリ秒",
+    "ymd": "日付",
+    "unrecognized": "認識できない形式です",
+    "placeholder": "1719360000"
+  },
+  "colorConverter": {
+    "title": "カラー変換",
+    "description": "Convert between Hex, RGB, and HSL color formats with alpha channel support.",
+    "placeholder": "#ff6600 or rgb(255, 102, 0) or hsl(24, 100%, 50%)",
+    "unrecognized": "認識できない色形式です"
+  },
+  "htmlEscape": {
+    "title": "HTML エスケープ / アンエスケープ",
+    "description": "Escape and unescape HTML special characters (&lt; &gt; &amp; &quot; &#39;).",
+    "escape": "エスケープ",
+    "unescape": "アンエスケープ",
+    "convert": "▶ 変換",
+    "placeholderEscape": "<script>alert(\"XSS\")</script>",
+    "placeholderUnescape": "&lt;script&gt;alert(&quot;XSS&quot;)&lt;/script&gt;"
+  },
+  "sqlFormatter": {
+    "title": "SQLフォーマッター",
+    "description": "Format SQL statements with support for 15 database dialects.",
+    "dialect": "方言",
+    "indent": "インデント",
+    "format": "▶ フォーマット",
+    "placeholder": "SELECT * FROM users WHERE id = 1"
+  },
+  "markdownPreview": {
+    "title": "Markdown プレビュー",
+    "description": "Real-time Markdown rendering with support for headings, bold, code blocks, lists, and more.",
+    "edit": "編集",
+    "preview": "プレビュー"
+  },
+  "diffChecker": {
+    "title": "テキスト差分比較",
+    "description": "Compare two texts and highlight differences with side-by-side and inline modes.",
+    "original": "元のテキスト",
+    "modified": "新しいテキスト",
+    "sideBySide": "並列表示",
+    "inline": "インライン",
+    "clear": "クリア",
+    "diffCount": "{lines} lines, {changes} differences"
+  },
+  "yamlJson": {
+    "title": "YAML ↔ JSON 変換",
+    "description": "Quickly convert between YAML and JSON formats.",
+    "yamlToJson": "YAML → JSON",
+    "jsonToYaml": "JSON → YAML",
+    "swap": "入れ替え",
+    "convert": "▶ 変換",
+    "placeholderYaml": "name: Alice\nage: 30\nroles:\n  - admin",
+    "placeholderJson": "{\"name\": \"Alice\", \"age\": 30}"
+  },
+  "jsonCsv": {
+    "title": "JSON ↔ CSV 変換",
+    "description": "Quickly convert between JSON arrays and CSV tables.",
+    "jsonToCsv": "JSON → CSV",
+    "csvToJson": "CSV → JSON",
+    "delimiter": "区切り文字",
+    "comma": "カンマ (,)",
+    "semicolon": "セミコロン (;)",
+    "tab": "タブ",
+    "convert": "▶ 変換",
+    "placeholderJson": "[{\"name\": \"Alice\", \"age\": 30}, {\"name\": \"Bob\", \"age\": 25}]",
+    "placeholderCsv": "name,age\nAlice,30\nBob,25"
+  }
+}

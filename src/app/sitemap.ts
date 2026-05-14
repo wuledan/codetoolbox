@@ -1,27 +1,33 @@
 import { MetadataRoute } from "next";
 import tools from "@/lib/registry";
+import { routing } from "@/i18n/navigation";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const toolEntries = tools.map((tool) => ({
-    url: `https://codetoolbox.dev${tool.path}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
+  const entries: MetadataRoute.Sitemap = [];
 
-  return [
-    {
-      url: "https://codetoolbox.dev",
+  for (const locale of routing.locales) {
+    const prefix = locale === "en" ? "" : `/${locale}`;
+    entries.push({
+      url: `https://codetoolbox.dev${prefix}`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 1.0,
-    },
-    {
-      url: "https://codetoolbox.dev/tools",
+    });
+    entries.push({
+      url: `https://codetoolbox.dev${prefix}/tools`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
-    },
-    ...toolEntries,
-  ];
+    });
+    for (const tool of tools) {
+      entries.push({
+        url: `https://codetoolbox.dev${prefix}${tool.path}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.8,
+      });
+    }
+  }
+
+  return entries;
 }
