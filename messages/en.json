@@ -82,6 +82,30 @@
     "color-converter": {
       "name": "Color Converter",
       "description": "Convert between Hex, RGB, and HSL color formats"
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes using Web Crypto API"
+    },
+    "html-preview": {
+      "name": "HTML Preview",
+      "description": "Preview HTML code in real-time with a sandboxed iframe"
+    },
+    "cron-expression": {
+      "name": "Cron Expression Builder",
+      "description": "Build and interpret cron expressions with a visual selector"
+    },
+    "css-unit-converter": {
+      "name": "CSS Unit Converter",
+      "description": "Convert between px, rem, em, and % CSS units"
+    },
+    "string-case-converter": {
+      "name": "String Case Converter",
+      "description": "Convert text between camelCase, snake_case, kebab-case, and PascalCase"
+    },
+    "ip-lookup": {
+      "name": "IP Lookup",
+      "description": "Look up IPv4 address geolocation and ISP information"
     }
   },
   "toolPage": {
@@ -242,5 +266,105 @@
     "convert": "▶ Convert",
     "placeholderJson": "[{\"name\": \"Alice\", \"age\": 30}, {\"name\": \"Bob\", \"age\": 25}]",
     "placeholderCsv": "name,age\nAlice,30\nBob,25"
+  },
+  "hashGenerator": {
+    "title": "Hash Generator",
+    "description": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from text input using Web Crypto API. All processing happens locally in your browser.",
+    "algorithm": "Algorithm",
+    "generate": "▶ Generate",
+    "placeholder": "Enter text to hash...",
+    "faq1q": "What is a hash function?",
+    "faq1a": "A hash function maps input data to a fixed-size byte sequence. The same input always produces the same output, but even a tiny change in input produces a completely different hash.",
+    "faq2q": "Which algorithm should I use?",
+    "faq2a": "SHA-256 is the general-purpose recommendation. SHA-1 and MD5 are provided for legacy compatibility but are considered insecure for cryptographic use. SHA-512 produces a longer hash and is useful for high-security contexts.",
+    "faq3q": "Can I hash files?",
+    "faq3a": "Currently this tool only supports text input. For file hashing, you can paste the file content as text, or use a command-line tool like sha256sum."
+  },
+  "htmlPreview": {
+    "title": "HTML Preview",
+    "description": "Write HTML and see it rendered live in a sandboxed iframe. Great for prototyping, learning, and testing HTML/CSS snippets.",
+    "placeholder": "<h1>Hello World</h1>\n<p>Edit this HTML and see the preview live!</p>",
+    "faq1q": "Is the preview sandboxed?",
+    "faq1a": "Yes, the preview runs in a sandboxed iframe that restricts scripts, forms, and same-origin access for safety.",
+    "faq2q": "Can I use CSS and JavaScript in the preview?",
+    "faq2a": "Inline <style> and <script> tags inside the HTML are supported. External resource references via <link> or <script src> are blocked by the sandbox.",
+    "faq3q": "Why is my external resource not loading?",
+    "faq3a": "The sandbox restricts loading external resources for security. Embed all CSS and JS inline in your HTML for the best results."
+  },
+  "cronExpression": {
+    "title": "Cron Expression Builder",
+    "description": "Build cron expressions visually and get a human-readable explanation of what the schedule means.",
+    "minute": "Minute",
+    "hour": "Hour",
+    "day": "Day",
+    "month": "Month",
+    "weekday": "Weekday",
+    "expression": "Cron Expression",
+    "explanation": "Explanation",
+    "every": "Every",
+    "specific": "Specific",
+    "step": "Step",
+    "range": "Range",
+    "faq1q": "What is a cron expression?",
+    "faq1a": "A cron expression is a string of 5 fields (minute, hour, day of month, month, day of week) that defines a recurring schedule. It is widely used in job schedulers on Unix-like systems.",
+    "faq2q": "What does * mean in a cron field?",
+    "faq2a": "An asterisk (*) means 'every possible value' for that field. For example, * in the hour field means 'every hour'.",
+    "faq3q": "Can I use special characters like / and ,?",
+    "faq3a": "Yes. Use / for step values (*/5 means every 5 units), , to list specific values (1,15 means both 1 and 15), and - for ranges (1-5 means 1 through 5). Currently the builder uses 'every' and 'specific' modes for common patterns."
+  },
+  "cssUnitConverter": {
+    "title": "CSS Unit Converter",
+    "description": "Convert between px, rem, em, and % CSS units based on a configurable base font size (default 16px).",
+    "inputValue": "Value",
+    "inputUnit": "Unit",
+    "baseFontSize": "Base Font Size (px)",
+    "faq1q": "What is the default base font size?",
+    "faq1a": "The default base font size is 16px, which is the browser default. You can change it to match your project's root font size.",
+    "faq2q": "How are em and % different from rem?",
+    "faq2a": "rem is relative to the root element's font size, while em and % are relative to the parent element's font size. This tool assumes the same base for simplicity.",
+    "faq3q": "Why are my converted values different from other tools?",
+    "faq3a": "Conversion results depend on the base font size setting. Make sure this matches your project's root font-size (common values are 16px, 10px, or 14px)."
+  },
+  "stringCaseConverter": {
+    "title": "String Case Converter",
+    "description": "Convert text between camelCase, snake_case, kebab-case, and PascalCase instantly.",
+    "placeholder": "Enter text to convert...",
+    "camelCase": "camelCase",
+    "snakeCase": "snake_case",
+    "kebabCase": "kebab-case",
+    "pascalCase": "PascalCase",
+    "faq1q": "What is camelCase?",
+    "faq1a": "camelCase starts with a lowercase letter and capitalizes the first letter of each subsequent word, e.g. myVariableName. It is common in JavaScript and Java.",
+    "faq2q": "When should I use snake_case?",
+    "faq2a": "snake_case uses underscores between words and is common in Python, Ruby, and database column names, e.g. my_variable_name.",
+    "faq3q": "How does the converter handle acronyms?",
+    "faq3a": "The converter splits words on common delimiters (spaces, underscores, hyphens) and handles consecutive uppercase letters as acronyms. For example, 'XMLParser' converts to 'xml_parser' in snake_case."
+  },
+  "ipLookup": {
+    "title": "IP Lookup",
+    "description": "Look up geolocation, ISP, and timezone information for any IPv4 address using the ipapi.co API.",
+    "placeholder": "Enter IPv4 address (e.g. 8.8.8.8)",
+    "lookup": "▶ Lookup",
+    "loading": "Loading...",
+    "error": "Failed to look up IP address",
+    "invalidIp": "Please enter a valid IPv4 address",
+    "field": "Field",
+    "value": "Value",
+    "ip": "IP",
+    "city": "City",
+    "region": "Region",
+    "country": "Country",
+    "latitude": "Latitude",
+    "longitude": "Longitude",
+    "timezone": "Timezone",
+    "isp": "ISP",
+    "org": "Organization",
+    "asn": "ASN",
+    "faq1q": "What information does IP Lookup provide?",
+    "faq1a": "IP Lookup returns geolocation data (city, region, country, coordinates), network information (ISP, organization, ASN), and timezone for the given IPv4 address.",
+    "faq2q": "Is my IP address stored or tracked?",
+    "faq2a": "No. This tool sends the IP you enter directly to ipapi.co and does not store or log any queries.",
+    "faq3q": "Why did my lookup fail?",
+    "faq3a": "Lookups can fail if the IP address is invalid, reserved (e.g. 192.168.x.x), or if the ipapi.co API rate limit has been exceeded (1,000 requests/day for free tier)."
   }
 }
